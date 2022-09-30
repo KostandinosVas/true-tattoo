@@ -26,7 +26,12 @@ const Hero = () => {
           </button>
         </div>
         {/* outline text */}
-        <div className='hidden xl:flex absolute -bottom-2 right-0 left-0 before:content-outlineText'></div>
+        <div
+          className='hidden xl:flex absolute -bottom-2 right-0 left-0 before:content-outlineText'
+          data-aos='fade-right'
+          data-aos-offset='0'
+          data-aos-delay='1200'
+        ></div>
       </div>
     </section>
   );
