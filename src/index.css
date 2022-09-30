@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* apply some general styles */
+@layer base {
+  body {
+    @apply font-secondary text-lg;
+  }
+  .h1 {
+    @apply text-[60px] lg:text-[118px] tracking-[-2px] leading-none font-tertiary mb-6;
+  }
+}
