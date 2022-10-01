@@ -16,18 +16,20 @@ const Header = () => {
   return (
     <header
       className={`${
-        isActive ? 'h-[100px]' : 'h-[150px]'
+        isActive ? 'h-[110px] shadow-lg' : 'h-[150px]'
       }  bg-white fixed left-0 right-0 z-10 max-w-[1920px] w-full mx-auto transition-all duration-300`}
     >
       <div className='flex justify-between items-center h-full pl-[50px] pr-[60px]'>
         {/* logo */}
-        <div data-aos='fade-down'>
+        <a className='mx-auto lg:mx-0' href='/' data-aos='fade-down'>
           <img src={logo} alt='' />
+        </a>
+        {/* nav - initially is hidden - show on desktop*/}
+        <div className='hidden lg:flex'>
+          <Nav />
         </div>
-        {/* nav */}
-        <Nav />
         {/* social icons */}
-        <div>social</div>
+        <div className='hidden lg:flex'>social</div>
       </div>
     </header>
   );
