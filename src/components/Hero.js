@@ -8,7 +8,7 @@ const Hero = () => {
   const { title, subtitle, textBtn } = heroData;
   return (
     <section className='bg-hero bg-cover bg-center min-h-[40vh] lg:h-[948px] bg-no-repeat relative'>
-      <div className='container mx-auto min-h-[40vh] lg:h-full flex items-center justify-center lg:justify-end mt-[150px]'>
+      <div className='container mx-auto min-h-[40vh] lg:h-full flex items-center justify-center xl:justify-end mt-[150px]'>
         {/* text & btn */}
         <div className='text-white text-center lg:text-left lg:max-w-[640px]'>
           <h1 className='h1' data-aos='fade-up' data-aos-delay='400'>
