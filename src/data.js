@@ -22,12 +22,12 @@ export const headerData = {
 
 export const navData = {
   items: [
-    { href: '/', name: 'Home', delay: '400' },
-    { href: '/', name: 'About', delay: '600' },
-    { href: '/', name: 'Gallery', delay: '800' },
-    { href: '/', name: 'Interview', delay: '1000' },
-    { href: '/', name: 'Articles', delay: '1200' },
-    { href: '/', name: 'Contact', delay: '1200' },
+    { href: '/', name: 'Home', delay: '200' },
+    { href: '/', name: 'About', delay: '300' },
+    { href: '/', name: 'Gallery', delay: '400' },
+    { href: '/', name: 'Interview', delay: '500' },
+    { href: '/', name: 'Articles', delay: '600' },
+    { href: '/', name: 'Contact', delay: '700' },
   ],
 };
 

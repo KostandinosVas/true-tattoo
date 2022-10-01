@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 // import header data
 import { headerData } from '../data';
+// import components
+import Nav from './Nav';
 const Header = () => {
   // destructure header data
   const { logo, socials } = headerData;
@@ -23,7 +25,7 @@ const Header = () => {
           <img src={logo} alt='' />
         </div>
         {/* nav */}
-        <div>nav</div>
+        <Nav />
         {/* social icons */}
         <div>social</div>
       </div>

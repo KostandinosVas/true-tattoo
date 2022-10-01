@@ -7,6 +7,9 @@
   body {
     @apply font-secondary text-lg bg-[#E5E5E5];
   }
+  .link {
+    @apply uppercase font-primary tracking-[0.08em];
+  }
   .h1 {
     @apply text-[60px] lg:text-[118px] tracking-[-2px] leading-none font-tertiary mb-4;
   }
