@@ -4,6 +4,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 // import components
 import Hero from './components/Hero';
+import Header from './components/Header';
 
 const App = () => {
   // aos initialization
@@ -12,17 +13,9 @@ const App = () => {
     offset: 100,
   });
   return (
-    <div className='max-w-[1920px] mx-auto overflow-hidden'>
+    <div className='max-w-[1920px] mx-auto overflow-hidden bg-white'>
+      <Header />
       <Hero />
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
-        odio ea. Nihil sunt, dolores dolor vitae culpa corrupti tenetur aliquid
-        consectetur nesciunt consequatur distinctio officiis porro, ratione
-        reprehenderit necessitatibus voluptatum quas architecto quia doloribus
-        earum quisquam nobis? Officiis saepe fuga, nisi fugiat at, quod suscipit
-        reprehenderit assumenda tenetur voluptate eveniet nobis expedita ex
-        voluptatum reiciendis adipisci aperiam placeat omnis odit.
-      </div>
       <div className='h-[4000px]'></div>
     </div>
   );

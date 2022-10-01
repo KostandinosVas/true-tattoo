@@ -5,9 +5,21 @@
 /* apply some general styles */
 @layer base {
   body {
-    @apply font-secondary text-lg;
+    @apply font-secondary text-lg bg-[#E5E5E5];
   }
   .h1 {
-    @apply text-[60px] lg:text-[118px] tracking-[-2px] leading-none font-tertiary mb-6;
+    @apply text-[60px] lg:text-[118px] tracking-[-2px] leading-none font-tertiary mb-4;
+  }
+  .btn {
+    @apply font-primary text-lg tracking-[0.08em] uppercase;
+  }
+  .btn-sm {
+    @apply h-[55px];
+  }
+  .btn-lg {
+    @apply h-[67px];
+  }
+  .btn-outline {
+    @apply border border-white/70 bg-none px-[40px] hover:bg-white hover:text-dark transition-all duration-300;
   }
 }
