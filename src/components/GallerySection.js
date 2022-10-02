@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+
 import PhotoAlbum from 'react-photo-album';
 import Lightbox from 'yet-another-react-lightbox';
-// import { Gallery } from 'react-grid-gallery';
 import 'yet-another-react-lightbox/styles.css';
+// import data
 import { galleryImages } from '../data';
 
 const slides = galleryImages.map(({ original, width, height }) => ({
@@ -24,6 +25,7 @@ const GallerySection = () => {
       />
       <Lightbox
         slides={slides}
+        styles={{ container: { backgroundColor: 'rgba(0,0,0,.9)' } }}
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}
