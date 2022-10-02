@@ -25,6 +25,7 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('/src/img/hero/bg.jpg')",
+        about: "url('/src/img/about/image.png')",
       },
       content: {
         outlineText: 'url("/src/img/hero/outline-text.svg")',

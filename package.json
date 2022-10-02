@@ -36,10 +36,12 @@
     ]
   },
   "devDependencies": {
-    "@types/aos": "^3.0.4",
     "autoprefixer": "^10.4.12",
     "postcss": "^8.4.16",
+    "react-grid-gallery": "^1.0.0",
     "react-icons": "^4.4.0",
-    "tailwindcss": "^3.1.8"
+    "react-photo-album": "^1.16.1",
+    "tailwindcss": "^3.1.8",
+    "yet-another-react-lightbox": "^2.1.1"
   }
 }
