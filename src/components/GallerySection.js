@@ -16,7 +16,7 @@ const GallerySection = () => {
   const [index, setIndex] = useState(-1);
   // const handleClick = (index) => setIndex(index);
   return (
-    <div>
+    <section>
       <PhotoAlbum
         layout='rows'
         photos={galleryImages}
@@ -30,7 +30,7 @@ const GallerySection = () => {
         index={index}
         close={() => setIndex(-1)}
       />
-    </div>
+    </section>
   );
 };
 
