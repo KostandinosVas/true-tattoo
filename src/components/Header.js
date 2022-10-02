@@ -44,7 +44,7 @@ const Header = () => {
         <div
           className={`${
             navMobile ? 'max-h-[400px]' : 'max-h-0 overflow-hidden'
-          } fixed -z-10 top-[120px]  left-0 w-full h-[400px] bg-pink-200 shadow-2xl transition-all duration-500`}
+          } fixed -z-10 top-[148px]  left-0 w-full h-[400px] bg-pink-200 shadow-2xl transition-all duration-500`}
         >
           <NavMobile />
         </div>
