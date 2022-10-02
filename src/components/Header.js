@@ -42,9 +42,11 @@ const Header = () => {
         </div>
         {/* nav mobile - is showing by default - hidden on desktop mode */}
         <div
-          className={`${
-            navMobile ? 'max-h-[400px]' : 'max-h-0 overflow-hidden'
-          } fixed -z-10 top-[148px]  left-0 w-full h-[400px] bg-pink-200 shadow-2xl transition-all duration-500`}
+          className={`${navMobile ? 'max-h-full' : 'max-h-0 overflow-hidden'} ${
+            isActive
+              ? 'top-[100px] lg:top-[110px]'
+              : 'top-[120px] lg:top-[150px]'
+          } fixed left-0 -z-10 w-full h-full bg-white transition-all duration-300`}
         >
           <NavMobile />
         </div>
