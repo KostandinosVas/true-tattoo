@@ -11,13 +11,6 @@ import {
 
 export const headerData = {
   logo: Logo,
-  social: [
-    { href: '/', icon: <GrFacebookOption /> },
-    { href: '/', icon: <IoLogoInstagram /> },
-    { href: '/', icon: <IoLogoPinterest /> },
-    { href: '/', icon: <IoLogoTwitter /> },
-    { href: '/', icon: <IoLogoYoutube /> },
-  ],
 };
 
 export const navData = {
@@ -30,6 +23,14 @@ export const navData = {
     { href: '/', name: 'Contact' },
   ],
 };
+
+export const socialData = [
+  { href: '/', icon: <GrFacebookOption /> },
+  { href: '/', icon: <IoLogoInstagram /> },
+  { href: '/', icon: <IoLogoPinterest /> },
+  { href: '/', icon: <IoLogoTwitter /> },
+  { href: '/', icon: <IoLogoYoutube /> },
+];
 
 export const heroData = {
   title: 'I’m Void Sir.',

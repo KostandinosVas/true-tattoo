@@ -6,6 +6,7 @@ import Nav from './Nav';
 import NavMobile from './NavMobile';
 // import icons
 import { TiThMenuOutline } from 'react-icons/ti';
+import Socials from './Socials';
 
 const Header = () => {
   // destructure header data
@@ -26,7 +27,7 @@ const Header = () => {
     >
       <div className='flex justify-between items-center h-full pl-[50px] pr-[60px]'>
         {/* logo */}
-        <a className='mx-auto xl:mx-0' href='/'>
+        <a href='/'>
           <img src={logo} alt='' />
         </a>
         {/* nav - initially is hidden - show on desktop*/}
@@ -51,17 +52,9 @@ const Header = () => {
           <NavMobile />
         </div>
         {/* social icons - initially hidden - is showing on desktop mode */}
-        <ul className='hidden xl:flex gap-x-[30px]'>
-          {social.map((item, index) => {
-            // destructure item
-            const { href, icon } = item;
-            return (
-              <li key={index}>
-                <a href={href}>{icon}</a>
-              </li>
-            );
-          })}
-        </ul>
+        <div className='hidden xl:flex'>
+          <Socials />
+        </div>
       </div>
     </header>
   );
