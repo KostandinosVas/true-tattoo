@@ -15,7 +15,10 @@ const Nav = () => {
               data-aos-duration='800'
               key={index}
             >
-              <a className='link' href='#'>
+              <a
+                className='link hover:border-b-2 hover:border-dark transition duration-300'
+                href='#'
+              >
                 {item.name}
               </a>
             </li>

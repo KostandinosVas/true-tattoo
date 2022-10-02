@@ -21,7 +21,7 @@ const Header = () => {
     >
       <div className='flex justify-between items-center h-full pl-[50px] pr-[60px]'>
         {/* logo */}
-        <a className='mx-auto xl:mx-0' href='/' data-aos='fade-down'>
+        <a className='mx-auto xl:mx-0' href='/'>
           <img src={logo} alt='' />
         </a>
         {/* nav - initially is hidden - show on desktop*/}
