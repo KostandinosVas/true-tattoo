@@ -1,7 +1,7 @@
 // import images
 import Logo from '../src/img/header/logo.svg';
 // import icons
-import { TiSocialFacebook } from 'react-icons/ti';
+import { GrFacebookOption } from 'react-icons/gr';
 import {
   IoLogoInstagram,
   IoLogoPinterest,
@@ -11,23 +11,23 @@ import {
 
 export const headerData = {
   logo: Logo,
-  socials: [
-    { href: '/', icon: <TiSocialFacebook />, delay: '400' },
-    { href: '/', icon: <IoLogoInstagram />, delay: '600' },
-    { href: '/', icon: <IoLogoPinterest />, delay: '800' },
-    { href: '/', icon: <IoLogoTwitter />, delay: '1000' },
-    { href: '/', icon: <IoLogoYoutube />, delay: '1200' },
+  social: [
+    { href: '/', icon: <GrFacebookOption /> },
+    { href: '/', icon: <IoLogoInstagram /> },
+    { href: '/', icon: <IoLogoPinterest /> },
+    { href: '/', icon: <IoLogoTwitter /> },
+    { href: '/', icon: <IoLogoYoutube /> },
   ],
 };
 
 export const navData = {
   items: [
-    { href: '/', name: 'Home', delay: '200' },
-    { href: '/', name: 'About', delay: '300' },
-    { href: '/', name: 'Gallery', delay: '400' },
-    { href: '/', name: 'Interview', delay: '500' },
-    { href: '/', name: 'Articles', delay: '600' },
-    { href: '/', name: 'Contact', delay: '700' },
+    { href: '/', name: 'Home' },
+    { href: '/', name: 'About' },
+    { href: '/', name: 'Gallery' },
+    { href: '/', name: 'Interview' },
+    { href: '/', name: 'Articles' },
+    { href: '/', name: 'Contact' },
   ],
 };
 

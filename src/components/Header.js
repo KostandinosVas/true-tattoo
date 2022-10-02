@@ -5,7 +5,7 @@ import { headerData } from '../data';
 import Nav from './Nav';
 const Header = () => {
   // destructure header data
-  const { logo, socials } = headerData;
+  const { logo, social } = headerData;
   const [isActive, setIsActive] = useState(false);
   // scroll event
   useEffect(() => {
@@ -29,7 +29,17 @@ const Header = () => {
           <Nav />
         </div>
         {/* social icons */}
-        <div className='hidden xl:flex'>social</div>
+        <ul className='hidden xl:flex gap-x-[30px]'>
+          {social.map((item, index) => {
+            // destructure item
+            const { href, icon } = item;
+            return (
+              <li key={index}>
+                <a href={href}>{icon}</a>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </header>
   );
