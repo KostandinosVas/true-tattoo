@@ -15,7 +15,7 @@ const About = () => {
           </div>
           <div className='flex-1 h-full'>
             <h2 className='h2'>{title}</h2>
-            <p>{subtitle1}</p>
+            <p className='mb-6'>{subtitle1}</p>
             <p>{subtitle2}</p>
             <button>{textBtn}</button>
           </div>

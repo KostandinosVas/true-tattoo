@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+// import photo album & lightbox
 import PhotoAlbum from 'react-photo-album';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
@@ -14,7 +14,6 @@ const slides = galleryImages.map(({ original, width, height }) => ({
 
 const GallerySection = () => {
   const [index, setIndex] = useState(-1);
-  // const handleClick = (index) => setIndex(index);
   return (
     <section>
       <PhotoAlbum

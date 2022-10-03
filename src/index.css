@@ -8,7 +8,7 @@
     @apply font-secondary text-lg bg-[#E5E5E5];
   }
   .section {
-    @apply py-[80px] lg:py-[160px];
+    @apply py-[40px] lg:py-[160px];
   }
   .link {
     @apply uppercase font-primary tracking-[0.08em];
@@ -17,7 +17,7 @@
     @apply text-[60px] lg:text-[118px] tracking-[-2px] leading-none font-tertiary mb-4;
   }
   .h2 {
-    @apply text-[85px] text-dark uppercase font-primary max-w-[236px] leading-none;
+    @apply text-[85px] text-dark uppercase font-primary max-w-[236px] leading-none mb-[38px];
   }
   .btn {
     @apply font-primary text-lg tracking-[0.08em] uppercase;
