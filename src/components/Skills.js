@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 const Skills = () => {
+  const ref = useRef();
   const [fullBody, setFullBody] = useState(0);
   const [piercing, setPiercing] = useState(0);
   const [fullColor, setFullColor] = useState(0);
@@ -39,7 +40,7 @@ const Skills = () => {
   };
 
   return (
-    <section className='section font-primary'>
+    <section ref={ref} className='section font-primary'>
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row justify-between'>
           <div className='w-[275px]'>
