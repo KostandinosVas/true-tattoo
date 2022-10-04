@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 const Skills = () => {
   const { ref, inView } = useInView({
-    threshold: 0,
+    /* Optional options */
+    threshold: 0.2,
   });
 
   const [fullBody, setFullBody] = useState(0);
   const [piercing, setPiercing] = useState(0);
   const [fullColor, setFullColor] = useState(0);
   const [temporary, setTemporary] = useState(0);
-  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (visible) {
+    if (inView) {
       setTimeout(() => {
         if (fullBody < 90) {
           setFullBody(fullBody + 1);
@@ -31,7 +31,7 @@ const Skills = () => {
         }
       }, 50);
     }
-  }, [fullBody, piercing, fullBody, temporary]);
+  }, [inView, fullBody, piercing, fullBody, temporary]);
 
   const styles = {
     path: {
