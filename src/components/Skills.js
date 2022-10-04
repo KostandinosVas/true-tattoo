@@ -56,48 +56,48 @@ const Skills = () => {
   return (
     <section ref={ref} className='section font-primary'>
       <div className='container mx-auto'>
-        <div className='flex flex-col xl:flex-row justify-between'>
-          <div className='w-[275px] flex flex-col justify-center items-center gap-y-6'>
+        <div className='flex flex-col xl:flex-row justify-between items-center gap-y-12'>
+          <div className='w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6'>
             <CircularProgressbar
               strokeWidth={1}
               styles={styles}
               value={fullBody}
               text={`${fullBody}%`}
             />
-            <div className='uppercase font-light tracking-[1.2px]'>
+            <div className='uppercase font-light tracking-[1.2px] text-center'>
               Full Body Tatoo
             </div>
           </div>
-          <div className='w-[275px] flex flex-col justify-center items-center gap-y-6'>
+          <div className='w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6'>
             <CircularProgressbar
               styles={styles}
               strokeWidth={1}
               value={piercing}
               text={`${piercing}%`}
             />
-            <div className='uppercase font-light tracking-[1.2px]'>
+            <div className='uppercase font-light tracking-[1.2px] text-center'>
               Safely Piercing
             </div>
           </div>
-          <div className='w-[275px] flex flex-col justify-center items-center gap-y-6'>
+          <div className='w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6'>
             <CircularProgressbar
               styles={styles}
               strokeWidth={1}
               value={fullColor}
               text={`${fullColor}%`}
             />
-            <div className='uppercase font-light tracking-[1.2px]'>
+            <div className='uppercase font-light tracking-[1.2px] text-center'>
               Full Colour Tatoo
             </div>
           </div>
-          <div className='w-[275px] flex flex-col justify-center items-center gap-y-6'>
+          <div className='w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6'>
             <CircularProgressbar
               styles={styles}
               strokeWidth={1}
               value={temporary}
               text={`${temporary}%`}
             />
-            <div className='uppercase font-light tracking-[1.2px]'>
+            <div className='uppercase font-light tracking-[1.2px] text-center'>
               Temporary Tatoo
             </div>
           </div>

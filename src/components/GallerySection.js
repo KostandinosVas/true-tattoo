@@ -5,6 +5,8 @@ import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 // import data
 import { galleryData } from '../data';
+// import icons
+import { IoMdArrowForward } from 'react-icons/io';
 
 const slides = galleryData.images.map(({ original, width, height }) => ({
   src: original,
@@ -15,24 +17,33 @@ const slides = galleryData.images.map(({ original, width, height }) => ({
 const GallerySection = () => {
   const [index, setIndex] = useState(-1);
   // destructure gallery data
-  const { title, images } = galleryData;
+  const { title, textBtn, images } = galleryData;
   return (
     <section className='bg-[#F9F9F9] section relative mt-[40px] lg:mt-0'>
       <div className='container mx-auto'>
-        <h2 className='h2 max-w-[370px]'>{title}</h2>
+        <h2 className='h2 max-w-[370px] lg:mb-20'>{title}</h2>
       </div>
-      <PhotoAlbum
-        layout='rows'
-        photos={images}
-        onClick={(event, photo, index) => setIndex(index)}
-      />
-      <Lightbox
-        slides={slides}
-        styles={{ container: { backgroundColor: 'rgba(0,0,0,.9)' } }}
-        open={index >= 0}
-        index={index}
-        close={() => setIndex(-1)}
-      />
+      {/* photo album */}
+      <div className='mb-8 lg:mb-20'>
+        <PhotoAlbum
+          layout='rows'
+          photos={images}
+          onClick={(event, photo, index) => setIndex(index)}
+        />
+        <Lightbox
+          slides={slides}
+          styles={{ container: { backgroundColor: 'rgba(0,0,0,.9)' } }}
+          open={index >= 0}
+          index={index}
+          close={() => setIndex(-1)}
+        />
+      </div>
+      <div className='flex justify-center'>
+        <button className='btn btn-lg btn-dark flex items-center gap-x-[10px]'>
+          {textBtn}
+          <IoMdArrowForward className='text-xl' />
+        </button>
+      </div>
     </section>
   );
 };

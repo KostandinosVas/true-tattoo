@@ -58,6 +58,7 @@ export const aboutData = {
 
 export const galleryData = {
   title: 'Check my gallery:',
+  textBtn: 'View all',
   images: [
     {
       src: GalleryImg1,
