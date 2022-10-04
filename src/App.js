@@ -6,6 +6,7 @@ import Header from './components/Header';
 import About from './components/About';
 import GallerySection from './components/GallerySection';
 import Skills from './components/Skills';
+import Interview from './components/Interview';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       <GallerySection />
       <Skills />
+      <Interview />
       <div className='h-[4000px]'></div>
     </div>
   );
