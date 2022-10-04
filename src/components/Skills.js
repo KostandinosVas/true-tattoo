@@ -30,6 +30,11 @@ const Skills = () => {
           setTemporary(temporary + 1);
         }
       }, 50);
+    } else {
+      setFullBody(0);
+      setPiercing(0);
+      setFullColor(0);
+      setTemporary(0);
     }
   }, [inView, fullBody, piercing, fullBody, temporary]);
 
@@ -50,14 +55,14 @@ const Skills = () => {
     <section ref={ref} className='section font-primary'>
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row justify-between'>
-          <div className='w-[275px]'>
+          <div className='w-[275px] flex flex-col justify-center items-center gap-y-6'>
             <CircularProgressbar
               strokeWidth={1}
               styles={styles}
               value={fullBody}
               text={`${fullBody}%`}
             />
-            <div>Full Body Tatoo</div>
+            <div className='uppercase font-light'>Full Body Tatoo</div>
           </div>
           <div className='w-[275px]'>
             <CircularProgressbar
