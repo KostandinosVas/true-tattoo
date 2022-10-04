@@ -4,9 +4,9 @@ import PhotoAlbum from 'react-photo-album';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 // import data
-import { galleryImages } from '../data';
+import { galleryData } from '../data';
 
-const slides = galleryImages.map(({ original, width, height }) => ({
+const slides = galleryData.images.map(({ original, width, height }) => ({
   src: original,
   width,
   height,
@@ -14,13 +14,17 @@ const slides = galleryImages.map(({ original, width, height }) => ({
 
 const GallerySection = () => {
   const [index, setIndex] = useState(-1);
+  // destructure gallery data
+  const { title, images } = galleryData;
   return (
-    <section>
+    <section className='bg-[#F9F9F9] section relative mt-[40px] lg:mt-0'>
+      <div className='container mx-auto'>
+        <h2 className='h2 max-w-[370px]'>{title}</h2>
+      </div>
       <PhotoAlbum
         layout='rows'
-        photos={galleryImages}
+        photos={images}
         onClick={(event, photo, index) => setIndex(index)}
-        componentsProps={{ imageProps: { loading: 'lazy' } }}
       />
       <Lightbox
         slides={slides}

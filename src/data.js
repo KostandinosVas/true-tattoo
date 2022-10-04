@@ -56,53 +56,56 @@ export const aboutData = {
   textBtn: 'know more',
 };
 
-export const galleryImages = [
-  {
-    src: GalleryImg1,
-    original: GalleryImg1,
-    width: 465,
-    height: 412,
-  },
-  {
-    src: GalleryImg2,
-    original: GalleryImg2,
-    width: 465,
-    height: 540,
-  },
-  {
-    src: GalleryImg3,
-    original: GalleryImg3,
-    width: 465,
-    height: 412,
-  },
-  {
-    src: GalleryImg4,
-    original: GalleryImg4,
-    width: 465,
-    height: 540,
-  },
-  {
-    src: GalleryImg5,
-    original: GalleryImg5,
-    width: 465,
-    height: 540,
-  },
-  {
-    src: GalleryImg6,
-    original: GalleryImg6,
-    width: 464,
-    height: 412,
-  },
-  {
-    src: GalleryImg7,
-    original: GalleryImg7,
-    width: 465,
-    height: 540,
-  },
-  {
-    src: GalleryImg8,
-    original: GalleryImg8,
-    width: 465,
-    height: 412,
-  },
-];
+export const galleryData = {
+  title: 'Check my gallery:',
+  images: [
+    {
+      src: GalleryImg1,
+      original: GalleryImg1,
+      width: 465,
+      height: 412,
+    },
+    {
+      src: GalleryImg2,
+      original: GalleryImg2,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg3,
+      original: GalleryImg3,
+      width: 465,
+      height: 412,
+    },
+    {
+      src: GalleryImg4,
+      original: GalleryImg4,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg5,
+      original: GalleryImg5,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg6,
+      original: GalleryImg6,
+      width: 464,
+      height: 412,
+    },
+    {
+      src: GalleryImg7,
+      original: GalleryImg7,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg8,
+      original: GalleryImg8,
+      width: 465,
+      height: 412,
+    },
+  ],
+};

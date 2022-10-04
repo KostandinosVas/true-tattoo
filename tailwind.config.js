@@ -22,6 +22,9 @@ module.exports = {
     extend: {
       colors: {
         dark: '#111111',
+        grey: {
+          DEFAULT: '#555555',
+        },
       },
       backgroundImage: {
         hero: "url('/src/img/hero/bg.jpg')",

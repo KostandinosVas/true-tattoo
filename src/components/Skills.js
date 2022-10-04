@@ -1,11 +1,13 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
+//  useInView hook
 import { useInView } from 'react-intersection-observer';
+// react circular
 import { CircularProgressbar } from 'react-circular-progressbar';
+// react circular styles
 import 'react-circular-progressbar/dist/styles.css';
 
 const Skills = () => {
   const { ref, inView } = useInView({
-    /* Optional options */
     threshold: 0.2,
   });
 
@@ -62,31 +64,42 @@ const Skills = () => {
               value={fullBody}
               text={`${fullBody}%`}
             />
-            <div className='uppercase font-light'>Full Body Tatoo</div>
+            <div className='uppercase font-light tracking-[1.2px]'>
+              Full Body Tatoo
+            </div>
           </div>
-          <div className='w-[275px]'>
+          <div className='w-[275px] flex flex-col justify-center items-center gap-y-6'>
             <CircularProgressbar
               styles={styles}
               strokeWidth={1}
               value={piercing}
               text={`${piercing}%`}
             />
+            <div className='uppercase font-light tracking-[1.2px]'>
+              Safely Piercing
+            </div>
           </div>
-          <div className='w-[275px]'>
+          <div className='w-[275px] flex flex-col justify-center items-center gap-y-6'>
             <CircularProgressbar
               styles={styles}
               strokeWidth={1}
               value={fullColor}
               text={`${fullColor}%`}
             />
+            <div className='uppercase font-light tracking-[1.2px]'>
+              Full Colour Tatoo
+            </div>
           </div>
-          <div className='w-[275px]'>
+          <div className='w-[275px] flex flex-col justify-center items-center gap-y-6'>
             <CircularProgressbar
               styles={styles}
               strokeWidth={1}
               value={temporary}
               text={`${temporary}%`}
             />
+            <div className='uppercase font-light tracking-[1.2px]'>
+              Temporary Tatoo
+            </div>
           </div>
         </div>
       </div>
