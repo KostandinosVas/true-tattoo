@@ -12,7 +12,7 @@ const Hero = () => {
           <h1 className='h1'>{title}</h1>
           <p className='mb-8 lg:mb-16 max-w-lg leading-relaxed'>{subtitle}</p>
           {/* btn */}
-          <button className='btn btn-sm lg:btn-lg btn-outline'>
+          <button className='btn btn-sm lg:btn-lg btn-outline mx-auto lg:mx-0'>
             {btnText}
             <div className='text-xl'>{btnIcon}</div>
           </button>
