@@ -21,7 +21,7 @@
   }
   /* buttons */
   .btn {
-    @apply font-primary text-lg tracking-[0.08em] uppercase px-[40px] transition-all duration-300 flex items-center gap-x-[10px] mx-auto lg:mx-0;
+    @apply font-primary text-lg tracking-[0.08em] uppercase px-[40px] transition-all duration-300 flex items-center gap-x-[10px];
   }
   .btn-sm {
     @apply h-[55px];
