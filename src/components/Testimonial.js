@@ -6,31 +6,29 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // import swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-// import './styles.css';
-// import required modules
-import { Navigation } from 'swiper';
 
 export const Testimonial = () => {
   return (
-    <section className='pb-[40px] lg:pb-[160px]'>
+    <section className='pb-[40px] pt-[40px] lg:pb-[160px] lg:pt-0'>
       <div className='container mx-auto'>
-        <Swiper navigation={true} modules={[Navigation]} className='mySwiper'>
+        <Swiper>
           {testimonialData.map((slide, index) => {
             // destructure slide
             const { quoteImg, message, name, occupation } = slide;
             return (
               <SwiperSlide key={index}>
-                <div className='max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-x-[38px]'>
-                  <div className='w-[154px] h-[109px]'>
+                <div className='max-w-[1200px] mx-auto flex flex-col items-center lg:flex-row lg:items-start gap-x-[38px]'>
+                  <div className='w-[154px] h-[109px] mb-5'>
                     <img src={quoteImg} alt='' />
                   </div>
-                  <div className='flex-1 mt-[60px]'>
-                    <div className='text-2xl lg:text-[36px] leading-normal'>
+                  <div className='flex-1 lg:mt-[60px]'>
+                    <div className='text-2xl lg:text-[36px] leading-normal mb-12'>
                       {message}
                     </div>
-                    <div>
-                      <div>{name}</div>
-                      <div>{occupation}</div>
+                    <div className='flex items-center text-xl lg:text-2xl font-primary'>
+                      <div className='font-semibold'>{name}</div>
+                      <span className='mx-4'>|</span>
+                      <div className='font-light'>{occupation}</div>
                     </div>
                   </div>
                 </div>

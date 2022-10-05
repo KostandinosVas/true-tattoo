@@ -33,9 +33,9 @@
     @apply border border-white/70 bg-none hover:bg-white hover:text-dark;
   }
   .btn-dark {
-    @apply bg-dark hover:bg-dark/95 transition-all text-white;
+    @apply bg-dark hover:bg-dark/90 transition-all text-white;
   }
   .btn-link {
-    @apply px-0 h-auto text-dark hover:text-dark/95 transition-all;
+    @apply px-0 h-auto text-dark hover:text-dark/90 transition-all;
   }
 }
