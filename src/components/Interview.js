@@ -19,14 +19,14 @@ const Interview = () => {
             </h3>
             {/* btn */}
             <div
-              className='text-white flex items-center gap-x-5 cursor-pointer'
+              className='text-white flex items-center gap-x-5 cursor-pointer hover:opacity-80 transition'
               onClick={() => setOpen(true)}
             >
               {/* border */}
-              <div className='w-[91px] h-[91px] border rounded-full text-dark p-[10px]'>
+              <div className='w-[91px] h-[91px] border border-white/40 rounded-full text-dark p-[8px]'>
                 {/* inner */}
-                <div className='bg-white w-full h-full rounded-full flex justify-center items-center hover:scale-105 transition-all duration-300'>
-                  <div className='text-lg'>{btnIcon}</div>
+                <div className='bg-white w-full h-full rounded-full flex justify-center items-center'>
+                  <div className='pl-1'>{btnIcon}</div>
                 </div>
               </div>
               {/* btn text */}
