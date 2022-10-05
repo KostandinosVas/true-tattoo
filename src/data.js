@@ -11,6 +11,7 @@ import GalleryImg8 from '../src/img/gallery/8.png';
 // import icons
 import { GrFacebookOption } from 'react-icons/gr';
 import { IoMdArrowForward } from 'react-icons/io';
+import { FaPlay } from 'react-icons/fa';
 
 import {
   IoLogoInstagram,
@@ -46,8 +47,8 @@ export const heroData = {
   title: 'I’m Void Sir.',
   subtitle:
     'Tattoos have their own unique power and magic. They not only beautify the body but also the psyche.',
-  textBtn: 'read more',
-  iconBtn: <IoMdArrowForward />,
+  btnText: 'read more',
+  btnIcon: <IoMdArrowForward />,
 };
 
 export const aboutData = {
@@ -56,14 +57,14 @@ export const aboutData = {
     'In velit arcu posuere integer. Dolor sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus hac vel ante sit sed scelerisque praesent duis volutpat laoreet.',
   subtitle2:
     'Nisl, sit molestie commodo congue. Etiam lectus risus in amet. Commodo molestie fames etiam aenean sed. Pellentesque et venenatis amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra faucibus tincidunt habitasse amet. Nunc, velit nunc, scelerisque imperdiet nunc.',
-  textBtn: 'know more',
-  iconBtn: <IoMdArrowForward />,
+  btnText: 'Know more',
+  btnIcon: <IoMdArrowForward />,
 };
 
 export const galleryData = {
   title: 'Check my gallery:',
-  textBtn: 'View all',
-  iconBtn: <IoMdArrowForward />,
+  btnText: 'View all',
+  btnIcon: <IoMdArrowForward />,
   images: [
     {
       src: GalleryImg1,
@@ -114,4 +115,11 @@ export const galleryData = {
       height: 412,
     },
   ],
+};
+
+export const interviewData = {
+  title:
+    '“Consider what you desire. Your tattoo artist will never tell you what tattoo to have.”',
+  btnText: 'Watch it now',
+  btnIcon: <FaPlay />,
 };

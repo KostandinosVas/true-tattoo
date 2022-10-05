@@ -3,7 +3,7 @@ import React from 'react';
 import { aboutData } from '../data';
 const About = () => {
   // destructure about data
-  const { title, subtitle1, subtitle2, textBtn, iconBtn } = aboutData;
+  const { title, subtitle1, subtitle2, btnText, btnIcon } = aboutData;
   return (
     <section className='lg:py-16 xl:pb-[160px]'>
       <div className='container mx-auto'>
@@ -22,8 +22,8 @@ const About = () => {
                 <p className='mb-6'>{subtitle1}</p>
                 <p className='mb-9'>{subtitle2}</p>
                 <button className='btn btn-lg btn-link'>
-                  {textBtn}
-                  <div className='text-xl'>{iconBtn}</div>
+                  {btnText}
+                  <div className='text-xl'>{btnIcon}</div>
                 </button>
               </div>
             </div>

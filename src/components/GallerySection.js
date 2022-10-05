@@ -15,7 +15,7 @@ const slides = galleryData.images.map(({ original, width, height }) => ({
 const GallerySection = () => {
   const [index, setIndex] = useState(-1);
   // destructure gallery data
-  const { title, textBtn, iconBtn, images } = galleryData;
+  const { title, btnText, btnIcon, images } = galleryData;
   return (
     <section className='bg-[#F9F9F9] section relative mt-[40px] lg:mt-0'>
       <div className='container mx-auto'>
@@ -38,8 +38,8 @@ const GallerySection = () => {
       </div>
       <div className='flex justify-center'>
         <button className='btn btn-lg btn-dark'>
-          {textBtn}
-          <div className='text-xl'>{iconBtn}</div>
+          {btnText}
+          <div className='text-xl'>{btnIcon}</div>
         </button>
       </div>
     </section>
