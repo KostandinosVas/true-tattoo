@@ -21,7 +21,7 @@ export const Testimonial = () => {
                   <div className='w-[154px] h-[109px] mb-5'>
                     <img src={quoteImg} alt='' />
                   </div>
-                  <div className='flex-1 lg:mt-[60px]'>
+                  <div className='flex-1 lg:mt-[54px]'>
                     <div className='text-2xl lg:text-[36px] leading-normal mb-12'>
                       {message}
                     </div>
