@@ -23,7 +23,7 @@ const Interview = () => {
               onClick={() => setOpen(true)}
             >
               {/* border */}
-              <div className='w-[91px] h-[91px] border border-white/40 rounded-full text-dark p-[8px]'>
+              <div className='w-[70px] h-[70px] lg:w-[91px] lg:h-[91px] border border-white/40 rounded-full text-dark p-[5px] lg:p-[8px]'>
                 {/* inner */}
                 <div className='bg-white w-full h-full rounded-full flex justify-center items-center'>
                   <div className='pl-1'>{btnIcon}</div>

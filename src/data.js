@@ -8,6 +8,7 @@ import GalleryImg5 from '../src/img/gallery/5.png';
 import GalleryImg6 from '../src/img/gallery/6.png';
 import GalleryImg7 from '../src/img/gallery/7.png';
 import GalleryImg8 from '../src/img/gallery/8.png';
+import QuoteImg from '../src/img/testimonial/quote.svg';
 // import icons
 import { GrFacebookOption } from 'react-icons/gr';
 import { IoMdArrowForward } from 'react-icons/io';
@@ -123,3 +124,20 @@ export const interviewData = {
   btnText: 'Watch it now',
   btnIcon: <FaPlay />,
 };
+
+export const testimonialData = [
+  {
+    quoteImg: QuoteImg,
+    message:
+      "The entire team is extremely kind and friendly. They're fantastic. They're great at what they do! And it's unique.They will properly consult with you.",
+    name: 'Jack Geoffrey',
+    occupation: 'Tattoo Artist',
+  },
+  {
+    quoteImg: QuoteImg,
+    message:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam culpa asperiores officia natus dignissimos autem possimus molestias aperiam?',
+    name: 'Douglas Hane',
+    occupation: 'Tattoo Artist',
+  },
+];
