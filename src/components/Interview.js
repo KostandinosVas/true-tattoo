@@ -14,7 +14,7 @@ const Interview = () => {
       <div className='container mx-auto h-full'>
         <div className='flex flex-col justify-center h-full'>
           <div className='flex flex-col items-start max-w-[880px]'>
-            <h3 className='text-white text-[40px] lg:text-[60px] leading-none font-tertiary -tracking-[1.5px] mb-8'>
+            <h3 className='text-white text-[40px] lg:text-[60px] leading-[1.1] font-tertiary -tracking-[1.5px] capitalize  mb-8'>
               {title}
             </h3>
             {/* btn */}
