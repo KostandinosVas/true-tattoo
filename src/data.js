@@ -10,6 +10,8 @@ import GalleryImg7 from '../src/img/gallery/7.png';
 import GalleryImg8 from '../src/img/gallery/8.png';
 // import icons
 import { GrFacebookOption } from 'react-icons/gr';
+import { IoMdArrowForward } from 'react-icons/io';
+
 import {
   IoLogoInstagram,
   IoLogoPinterest,
@@ -45,6 +47,7 @@ export const heroData = {
   subtitle:
     'Tattoos have their own unique power and magic. They not only beautify the body but also the psyche.',
   textBtn: 'read more',
+  iconBtn: <IoMdArrowForward />,
 };
 
 export const aboutData = {
@@ -54,11 +57,13 @@ export const aboutData = {
   subtitle2:
     'Nisl, sit molestie commodo congue. Etiam lectus risus in amet. Commodo molestie fames etiam aenean sed. Pellentesque et venenatis amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra faucibus tincidunt habitasse amet. Nunc, velit nunc, scelerisque imperdiet nunc.',
   textBtn: 'know more',
+  iconBtn: <IoMdArrowForward />,
 };
 
 export const galleryData = {
   title: 'Check my gallery:',
   textBtn: 'View all',
+  iconBtn: <IoMdArrowForward />,
   images: [
     {
       src: GalleryImg1,

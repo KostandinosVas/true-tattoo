@@ -5,8 +5,6 @@ import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 // import data
 import { galleryData } from '../data';
-// import icons
-import { IoMdArrowForward } from 'react-icons/io';
 
 const slides = galleryData.images.map(({ original, width, height }) => ({
   src: original,
@@ -17,7 +15,7 @@ const slides = galleryData.images.map(({ original, width, height }) => ({
 const GallerySection = () => {
   const [index, setIndex] = useState(-1);
   // destructure gallery data
-  const { title, textBtn, images } = galleryData;
+  const { title, textBtn, iconBtn, images } = galleryData;
   return (
     <section className='bg-[#F9F9F9] section relative mt-[40px] lg:mt-0'>
       <div className='container mx-auto'>
@@ -39,9 +37,9 @@ const GallerySection = () => {
         />
       </div>
       <div className='flex justify-center'>
-        <button className='btn btn-lg btn-dark flex items-center gap-x-[10px]'>
+        <button className='btn btn-lg btn-dark'>
           {textBtn}
-          <IoMdArrowForward className='text-xl' />
+          <div className='text-xl'>{iconBtn}</div>
         </button>
       </div>
     </section>
