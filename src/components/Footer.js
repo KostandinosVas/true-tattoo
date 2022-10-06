@@ -1,6 +1,8 @@
 import React from 'react';
 // import footer data
 import { footerData } from '../data';
+// import icons
+import { GrSend } from 'react-icons/gr';
 
 const Footer = () => {
   // destructure footer data
@@ -70,17 +72,20 @@ const Footer = () => {
             </ul>
           </div>
           {/* newsletter */}
-          <div className='flex-1 bg-red-300/10'>
+          <div className='flex-1'>
             <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>
               {newsletter.title}
             </div>
-            <div className='leading-relaxed'>{newsletter.subtitle}</div>
-            <form>
+            <div className='leading-relaxed mb-9'>{newsletter.subtitle}</div>
+            <form className='flex  justify-between items-start border-b border-[#B6B6B6]'>
               <input
-                className=''
+                className='outline-none placeholder:text-base italic capitalize bg-transparent pb-2'
                 type='text'
                 placeholder={newsletter.form.placeholder}
               />
+              <button type='submit' className='text-2xl cursor-pointer'>
+                {newsletter.form.icon}
+              </button>
             </form>
           </div>
         </div>
