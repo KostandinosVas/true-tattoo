@@ -12,8 +12,7 @@ import QuoteImg from '../src/img/testimonial/quote.svg';
 // import icons
 import { GrFacebookOption } from 'react-icons/gr';
 import { IoMdArrowForward } from 'react-icons/io';
-import { FaPlay } from 'react-icons/fa';
-
+import { FaPlay, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import {
   IoLogoInstagram,
   IoLogoPinterest,
@@ -150,16 +149,16 @@ export const contactData = {
       subtitle:
         'In velit arcu posuere integer sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus',
       address: {
-        icon: '',
+        icon: <FaMapMarkerAlt />,
         name: '784 Norman Street, Los Angeles',
       },
       phone: {
-        icon: '',
+        icon: <FaPhoneAlt />,
         number: '+49 93 30493943',
       },
-      contact: {
-        icon: '',
-        email: 'contact@yourcompany.com',
+      email: {
+        icon: <FaEnvelope />,
+        address: 'contact@yourcompany.com',
       },
       link: 'Get location',
     },
@@ -168,16 +167,16 @@ export const contactData = {
       subtitle:
         'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
       address: {
-        icon: '',
+        icon: <FaMapMarkerAlt />,
         name: '1630 Elm Drive, New York City',
       },
       phone: {
-        icon: '',
+        icon: <FaPhoneAlt />,
         number: '+49 34 36573355',
       },
-      contact: {
-        icon: '',
-        email: 'contact@yourcompany.com',
+      email: {
+        icon: <FaEnvelope />,
+        address: 'contact@yourcompany.com',
       },
       link: 'Get location',
     },
