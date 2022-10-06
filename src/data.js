@@ -12,7 +12,7 @@ import QuoteImg from '../src/img/testimonial/quote.svg';
 // import icons
 import { GrFacebookOption } from 'react-icons/gr';
 import { IoMdArrowForward } from 'react-icons/io';
-import { RiSendPlaneFill } from 'react-icons/ri';
+import { FiSend } from 'react-icons/fi';
 import { FaPlay, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import {
   IoLogoInstagram,
@@ -232,7 +232,7 @@ export const footerData = {
       'Elit duis porttitor massa tellus nun in velit arcu posuere integer.',
     form: {
       placeholder: 'Your email address',
-      icon: <RiSendPlaneFill />,
+      icon: <FiSend />,
     },
   },
 };
