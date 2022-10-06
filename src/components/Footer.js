@@ -17,7 +17,7 @@ const Footer = () => {
               {about.title}
             </div>
             {/* subtitle */}
-            <div className='leading-[187%]'>{about.subtitle}</div>
+            <div className='leading-relaxed'>{about.subtitle}</div>
             {/* address & phone & email */}
             <div className='flex flex-col gap-y-4 font-semibold text-[#DBDBDB]'>
               {/* address */}
@@ -70,7 +70,19 @@ const Footer = () => {
             </ul>
           </div>
           {/* newsletter */}
-          <div className='flex-1 bg-red-300'>newsletter</div>
+          <div className='flex-1 bg-red-300/10'>
+            <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>
+              {newsletter.title}
+            </div>
+            <div className='leading-relaxed'>{newsletter.subtitle}</div>
+            <form>
+              <input
+                className=''
+                type='text'
+                placeholder={newsletter.form.placeholder}
+              />
+            </form>
+          </div>
         </div>
       </div>
     </footer>
