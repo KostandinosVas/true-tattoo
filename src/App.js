@@ -8,6 +8,7 @@ import GallerySection from './components/GallerySection';
 import Skills from './components/Skills';
 import Interview from './components/Interview';
 import Testimonial from './components/Testimonial';
+import Contact from './components/Contact';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Skills />
       <Testimonial />
       <Interview />
+      <Contact />
       <div className='h-[4000px]'></div>
     </div>
   );

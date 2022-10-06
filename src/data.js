@@ -141,3 +141,51 @@ export const testimonialData = [
     occupation: 'Tattoo Artist',
   },
 ];
+
+export const contactData = {
+  title: 'Get in touch with me:',
+  info: [
+    {
+      title: 'LA office',
+      subtitle:
+        'In velit arcu posuere integer sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus',
+      address: {
+        icon: '',
+        name: '784 Norman Street, Los Angeles',
+      },
+      phone: {
+        icon: '',
+        number: '+49 93 30493943',
+      },
+      contact: {
+        icon: '',
+        email: 'contact@yourcompany.com',
+      },
+      link: 'Get location',
+    },
+    {
+      title: 'NYC office',
+      subtitle:
+        'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
+      address: {
+        icon: '',
+        name: '1630 Elm Drive, New York City',
+      },
+      phone: {
+        icon: '',
+        number: '+49 34 36573355',
+      },
+      contact: {
+        icon: '',
+        email: 'contact@yourcompany.com',
+      },
+      link: 'Get location',
+    },
+  ],
+  form: {
+    name: 'Write your name here',
+    email: 'Write your email address',
+    message: 'Write your messages here',
+    btnText: 'Send it',
+  },
+};
