@@ -10,6 +10,7 @@ import Interview from './components/Interview';
 import Testimonial from './components/Testimonial';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Copyright from './components/Copyright';
 
 const App = () => {
   return (
@@ -23,7 +24,8 @@ const App = () => {
       <Interview />
       <Contact />
       <Footer />
-      <div className='h-[4000px]'></div>
+      <Copyright />
+      {/* <div className='h-[4000px]'></div> */}
     </div>
   );
 };

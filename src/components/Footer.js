@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
             <ul className='flex flex-col gap-y-4 text-[#DBDBDB]'>
               {program.items.map((item, index) => {
-                return <li>{item.name}</li>;
+                return <li key={index}>{item.name}</li>;
               })}
             </ul>
           </div>
