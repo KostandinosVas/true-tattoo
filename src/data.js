@@ -12,6 +12,7 @@ import QuoteImg from '../src/img/testimonial/quote.svg';
 // import icons
 import { GrFacebookOption } from 'react-icons/gr';
 import { IoMdArrowForward } from 'react-icons/io';
+import { GrSend } from 'react-icons/gr';
 import { FaPlay, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import {
   IoLogoInstagram,
@@ -186,5 +187,52 @@ export const contactData = {
     email: 'Write your email address',
     message: 'Write your messages here',
     btnText: 'Send it',
+  },
+};
+
+export const footerData = {
+  about: {
+    title: 'About void tattoo',
+    subtitle:
+      'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
+    address: {
+      icon: <FaMapMarkerAlt />,
+      name: '1630 Elm Drive, New York City',
+    },
+    phone: {
+      icon: <FaPhoneAlt />,
+      number: '+49 34 36573355',
+    },
+    email: {
+      icon: <FaEnvelope />,
+      address: 'contact@yourcompany.com',
+    },
+  },
+  links: {
+    title: 'Useful links',
+    items: [
+      { href: '/', name: 'About me' },
+      { href: '/', name: 'My gallery' },
+      { href: '/', name: 'My services' },
+      { href: '/', name: 'Contact me' },
+    ],
+  },
+  program: {
+    title: 'Working Time',
+    items: [
+      { name: 'Mon - Tue / Appointment' },
+      { name: 'Wed - Fri / 10:00 - 9:00pm' },
+      { name: 'Sat / 10:00 - 6:00pm' },
+      { name: 'Sun / no work on this day' },
+    ],
+  },
+  newsletter: {
+    title: 'Newsletter',
+    subtitle:
+      'Elit duis porttitor massa tellus nun in velit arcu posuere integer.',
+    form: {
+      placeholder: 'Your email address',
+      icon: <GrSend />,
+    },
   },
 };
