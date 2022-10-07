@@ -7,10 +7,6 @@ import NavMobile from './NavMobile';
 import Socials from './Socials';
 // import icons
 import { TiThMenuOutline } from 'react-icons/ti';
-// import motion
-import { motion } from 'framer-motion';
-// import variants
-import { staggerContainer, fadeDown } from '../variants';
 
 const Header = () => {
   // destructure header data
@@ -29,20 +25,15 @@ const Header = () => {
         isActive ? 'h-[100px] lg:h-[110px] shadow-lg' : 'h-[120px] lg:h-[150px]'
       }  bg-white fixed left-0 right-0 z-10 max-w-[1920px] w-full mx-auto transition-all duration-300`}
     >
-      <motion.div
-        variants={staggerContainer}
-        initial='initial'
-        animate='animate'
-        className='flex justify-between items-center h-full pl-[50px] pr-[60px]'
-      >
+      <div className='flex justify-between items-center h-full pl-[50px] pr-[60px]'>
         {/* logo */}
-        <motion.a variants={fadeDown} href='/'>
+        <a href='/'>
           <img className='w-[188px] h-[90px]' src={logo} alt='' />
-        </motion.a>
+        </a>
         {/* nav - initially is hidden - show on desktop*/}
-        <motion.div variants={fadeDown} className='hidden xl:flex'>
+        <div className='hidden xl:flex'>
           <Nav />
-        </motion.div>
+        </div>
         {/* nav menu btn - is showing by default - hidden on desktop mode */}
         <div
           onClick={() => setNavMobile(!navMobile)}
@@ -61,10 +52,10 @@ const Header = () => {
           <NavMobile />
         </div>
         {/* social icons - initially hidden - is showing on desktop mode */}
-        <motion.div variants={fadeDown} className='hidden xl:flex'>
+        <div className='hidden xl:flex'>
           <Socials />
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </header>
   );
 };
