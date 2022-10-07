@@ -18,6 +18,7 @@ const About = () => {
             variants={fadeRight}
             initial='hidden'
             whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
             className='flex flex-col lg:flex-row flex-1'
           >
             <div className='text-[360px] xl:text-[720px] leading-none font-tertiary lg:-tracking-[0.055em] bg-about bg-no-repeat bg-right bg-clip-text text-transparent'>
@@ -29,6 +30,7 @@ const About = () => {
             variants={fadeLeft}
             initial='hidden'
             whileInView={'show'}
+            viewport={{ once: false, amount: 0.6 }}
             className='flex-1 h-full xl:mt-48'
           >
             <h2 className='h2'>{title}</h2>
