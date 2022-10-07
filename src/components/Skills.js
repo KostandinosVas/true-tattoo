@@ -5,6 +5,10 @@ import { useInView } from 'react-intersection-observer';
 import { CircularProgressbar } from 'react-circular-progressbar';
 // react circular styles
 import 'react-circular-progressbar/dist/styles.css';
+// import motion
+import { motion } from 'framer-motion';
+// import variants
+import { fadeUp } from '../variants';
 
 const Skills = () => {
   const { ref, inView } = useInView({
@@ -54,7 +58,14 @@ const Skills = () => {
   };
 
   return (
-    <section ref={ref} className='section font-primary'>
+    <motion.section
+      variants={fadeUp}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{ once: false, amount: 0.1 }}
+      ref={ref}
+      className='section font-primary'
+    >
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row justify-between items-center gap-y-12'>
           <div className='w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6'>
@@ -103,7 +114,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -4,13 +4,23 @@ import { interviewData } from '../data';
 // import modal video
 import ModalVideo from 'react-modal-video';
 import '../modalVideo.scss';
+// import motion
+import { motion } from 'framer-motion';
+// import variants
+import { fadeUp } from '../variants';
 
 const Interview = () => {
   // destructure interview data
   const { title, btnText, btnIcon } = interviewData;
   const [isOpen, setOpen] = useState(false);
   return (
-    <section className='section bg-dark bg-interview bg-no-repeat bg-cover bg-center lg:h-[812px]'>
+    <motion.section
+      variants={fadeUp}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{ once: false, amount: 0.3 }}
+      className='section bg-dark bg-interview bg-no-repeat bg-cover bg-center lg:h-[812px]'
+    >
       <div className='container mx-auto h-full'>
         <div className='flex flex-col justify-center h-full'>
           <div className='flex flex-col items-start max-w-[880px]'>
@@ -45,7 +55,7 @@ const Interview = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

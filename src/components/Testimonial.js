@@ -6,10 +6,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // import swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+// import motion
+import { motion } from 'framer-motion';
+// import variants
+import { fadeUp } from '../variants';
 
 export const Testimonial = () => {
   return (
-    <section className='pb-[40px] pt-[40px] lg:pb-[160px] lg:pt-0'>
+    <motion.section
+      variants={fadeUp}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{ once: false, amount: 0.2 }}
+      className='pb-[40px] pt-[40px] lg:pb-[160px] lg:pt-0'
+    >
       <div className='container mx-auto'>
         <Swiper>
           {testimonialData.map((slide, index) => {
@@ -37,7 +47,7 @@ export const Testimonial = () => {
           })}
         </Swiper>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

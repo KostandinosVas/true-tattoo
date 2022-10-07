@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
+// import data
+import { galleryData } from '../data';
 // import photo album & lightbox
 import PhotoAlbum from 'react-photo-album';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
-// import data
-import { galleryData } from '../data';
+// import motion
+import { motion } from 'framer-motion';
+// import variants
+import { fadeUp } from '../variants';
 
 const slides = galleryData.images.map(({ original, width, height }) => ({
   src: original,
@@ -19,10 +23,24 @@ const GallerySection = () => {
   return (
     <section className='bg-[#F9F9F9] section relative mt-[40px] lg:mt-0'>
       <div className='container mx-auto'>
-        <h2 className='h2 max-w-[370px] lg:mb-20'>{title}</h2>
+        <motion.h2
+          variants={fadeUp}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.6 }}
+          className='h2 max-w-[370px] lg:mb-20'
+        >
+          {title}
+        </motion.h2>
       </div>
       {/* photo album */}
-      <div className='mb-8 lg:mb-20'>
+      <motion.div
+        variants={fadeUp}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{ once: false, amount: 0.2 }}
+        className='mb-8 lg:mb-20'
+      >
         <PhotoAlbum
           layout='rows'
           photos={images}
@@ -35,13 +53,20 @@ const GallerySection = () => {
           index={index}
           close={() => setIndex(-1)}
         />
-      </div>
-      <div className='flex justify-center'>
+      </motion.div>
+      {/* btn */}
+      <motion.div
+        variants={fadeUp}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{ once: false, amount: 0.2 }}
+        className='flex justify-center'
+      >
         <button className='btn btn-lg btn-dark'>
           {btnText}
           <div className='text-xl'>{btnIcon}</div>
         </button>
-      </div>
+      </motion.div>
     </section>
   );
 };
