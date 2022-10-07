@@ -19,7 +19,9 @@ const Footer = () => {
               {about.title}
             </div>
             {/* subtitle */}
-            <div className='leading-relaxed'>{about.subtitle}</div>
+            <div className='leading-relaxed text-[#DBDBDB]'>
+              {about.subtitle}
+            </div>
             {/* address & phone & email */}
             <div className='flex flex-col gap-y-4 font-semibold text-[#DBDBDB]'>
               {/* address */}
@@ -76,10 +78,12 @@ const Footer = () => {
             <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>
               {newsletter.title}
             </div>
-            <div className='leading-relaxed mb-9'>{newsletter.subtitle}</div>
+            <div className='leading-relaxed mb-9 text-[#DBDBDB]'>
+              {newsletter.subtitle}
+            </div>
             <form className='flex  justify-between items-start border-b border-[#B6B6B6]'>
               <input
-                className='outline-none placeholder:text-base italic capitalize bg-transparent pb-2'
+                className='outline-none placeholder:text-base italic placeholder:capitalize  bg-transparent pb-2'
                 type='text'
                 placeholder={newsletter.form.placeholder}
               />

@@ -4,13 +4,17 @@ import { headerData } from '../data';
 // import components
 import Nav from './Nav';
 import NavMobile from './NavMobile';
+import Socials from './Socials';
 // import icons
 import { TiThMenuOutline } from 'react-icons/ti';
-import Socials from './Socials';
+// import motion
+import { motion } from 'framer-motion';
+// import variants
+import { staggerContainer, fadeDown } from '../variants';
 
 const Header = () => {
   // destructure header data
-  const { logo, social } = headerData;
+  const { logo } = headerData;
   const [isActive, setIsActive] = useState(false);
   const [navMobile, setNavMobile] = useState(false);
   // scroll event
@@ -25,15 +29,20 @@ const Header = () => {
         isActive ? 'h-[100px] lg:h-[110px] shadow-lg' : 'h-[120px] lg:h-[150px]'
       }  bg-white fixed left-0 right-0 z-10 max-w-[1920px] w-full mx-auto transition-all duration-300`}
     >
-      <div className='flex justify-between items-center h-full pl-[50px] pr-[60px]'>
+      <motion.div
+        variants={staggerContainer}
+        initial='initial'
+        animate='animate'
+        className='flex justify-between items-center h-full pl-[50px] pr-[60px]'
+      >
         {/* logo */}
-        <a href='/'>
+        <motion.a variants={fadeDown} href='/'>
           <img className='w-[188px] h-[90px]' src={logo} alt='' />
-        </a>
+        </motion.a>
         {/* nav - initially is hidden - show on desktop*/}
-        <div className='hidden xl:flex'>
+        <motion.div variants={fadeDown} className='hidden xl:flex'>
           <Nav />
-        </div>
+        </motion.div>
         {/* nav menu btn - is showing by default - hidden on desktop mode */}
         <div
           onClick={() => setNavMobile(!navMobile)}
@@ -52,10 +61,10 @@ const Header = () => {
           <NavMobile />
         </div>
         {/* social icons - initially hidden - is showing on desktop mode */}
-        <div className='hidden xl:flex'>
+        <motion.div variants={fadeDown} className='hidden xl:flex'>
           <Socials />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </header>
   );
 };

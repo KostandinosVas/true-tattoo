@@ -1,6 +1,9 @@
 import React from 'react';
 // import data
 import { heroData } from '../data';
+// import motion
+import { motion } from 'framer-motion';
+
 const Hero = () => {
   // destructure hero data
   const { title, subtitle, btnText, btnIcon } = heroData;
@@ -12,10 +15,12 @@ const Hero = () => {
           <h1 className='h1'>{title}</h1>
           <p className='mb-8 lg:mb-16 max-w-lg leading-relaxed'>{subtitle}</p>
           {/* btn */}
-          <button className='btn btn-sm lg:btn-lg btn-outline mx-auto lg:mx-0'>
-            {btnText}
-            <div className='text-xl'>{btnIcon}</div>
-          </button>
+          <div>
+            <button className='btn btn-sm lg:btn-lg btn-outline mx-auto lg:mx-0'>
+              {btnText}
+              <div className='text-xl'>{btnIcon}</div>
+            </button>
+          </div>
         </div>
         {/* outline text */}
         <div className='hidden xl:flex absolute -bottom-2 right-0 left-0 before:content-outlineText'></div>
