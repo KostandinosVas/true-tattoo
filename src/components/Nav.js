@@ -13,7 +13,7 @@ const Nav = () => {
             <li key={index}>
               <a
                 className='link hover:border-b-2 hover:border-dark transition duration-300'
-                href='#'
+                href={item.href}
               >
                 {item.name}
               </a>

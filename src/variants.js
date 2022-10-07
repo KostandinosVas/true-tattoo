@@ -1,23 +1,47 @@
-export const staggerContainer = {
-  initial: {},
-  animate: {
+export const fadeDown = {
+  hidden: {
+    y: -80,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
     transition: {
-      staggerChildren: 0.6,
-      delayChildren: 0.6,
+      type: 'tween',
+      duration: 1.4,
+      ease: [0.25, 0.25, 0.25, 0.75],
     },
   },
 };
 
-export const fadeDown = {
-  initial: {
-    y: -100,
+export const fadeRight = {
+  hidden: {
+    x: -80,
     opacity: 0,
   },
-  animate: {
-    y: 0,
+  show: {
+    x: 0,
     opacity: 1,
     transition: {
-      duration: 1.3,
+      type: 'tween',
+      duration: 1.6,
+      ease: [0.25, 0.25, 0.25, 0.75],
+    },
+  },
+};
+
+export const fadeLeft = {
+  hidden: {
+    x: 80,
+    opacity: 0,
+  },
+  show: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: 'tween',
+      duration: 1.6,
+      ease: [0.25, 0.25, 0.25, 0.75],
     },
   },
 };

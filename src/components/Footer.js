@@ -1,8 +1,6 @@
 import React from 'react';
 // import footer data
 import { footerData } from '../data';
-// import icons
-import { GrSend } from 'react-icons/gr';
 
 const Footer = () => {
   // destructure footer data
