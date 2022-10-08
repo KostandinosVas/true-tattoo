@@ -8,7 +8,7 @@ import 'yet-another-react-lightbox/styles.css';
 // import motion
 import { motion } from 'framer-motion';
 // import variants
-import { fadeUp } from '../variants';
+import { fade } from '../variants';
 
 const slides = galleryData.images.map(({ original, width, height }) => ({
   src: original,
@@ -24,7 +24,7 @@ const GallerySection = () => {
     <section className='bg-[#F9F9F9] section relative mt-[40px] lg:mt-0'>
       <div className='container mx-auto'>
         <motion.h2
-          variants={fadeUp}
+          variants={fade('up')}
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6 }}
@@ -35,7 +35,7 @@ const GallerySection = () => {
       </div>
       {/* photo album */}
       <motion.div
-        variants={fadeUp}
+        variants={fade('up')}
         initial='hidden'
         whileInView={'show'}
         viewport={{ once: false, amount: 0.2 }}
@@ -56,7 +56,7 @@ const GallerySection = () => {
       </motion.div>
       {/* btn */}
       <motion.div
-        variants={fadeUp}
+        variants={fade('up')}
         initial='hidden'
         whileInView={'show'}
         viewport={{ once: false, amount: 0.2 }}

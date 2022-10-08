@@ -9,12 +9,12 @@ import 'swiper/css/navigation';
 // import motion
 import { motion } from 'framer-motion';
 // import variants
-import { fadeUp } from '../variants';
+import { fade } from '../variants';
 
 export const Testimonial = () => {
   return (
     <motion.section
-      variants={fadeUp}
+      variants={fade('up')}
       initial='hidden'
       whileInView={'show'}
       viewport={{ once: false, amount: 0.2 }}

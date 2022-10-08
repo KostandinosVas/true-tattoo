@@ -7,15 +7,15 @@ import '../modalVideo.scss';
 // import motion
 import { motion } from 'framer-motion';
 // import variants
-import { fadeUp } from '../variants';
-
+import { fade } from '../variants';
+console.log(fade('down'));
 const Interview = () => {
   // destructure interview data
   const { title, btnText, btnIcon } = interviewData;
   const [isOpen, setOpen] = useState(false);
   return (
     <motion.section
-      variants={fadeUp}
+      variants={fade('right')}
       initial='hidden'
       whileInView={'show'}
       viewport={{ once: false, amount: 0.3 }}

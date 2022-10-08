@@ -4,7 +4,7 @@ import { aboutData } from '../data';
 // import motion
 import { motion } from 'framer-motion';
 // import variants
-import { fadeLeft, fadeRight } from '../variants';
+import { fade } from '../variants';
 
 const About = () => {
   // destructure about data
@@ -15,7 +15,7 @@ const About = () => {
         <div className='flex flex-col lg:flex-row gap-x-[70px] items-center'>
           {/* numbers */}
           <motion.div
-            variants={fadeRight}
+            variants={fade('right')}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
@@ -27,7 +27,7 @@ const About = () => {
           </motion.div>
           {/* text */}
           <motion.div
-            variants={fadeLeft}
+            variants={fade('left')}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.6 }}
