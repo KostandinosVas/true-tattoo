@@ -1,8 +1,6 @@
 import React from 'react';
 // import motion
 import { motion } from 'framer-motion';
-// import variants
-import { fadeIn } from '../variants';
 
 const Copyright = () => {
   return (
