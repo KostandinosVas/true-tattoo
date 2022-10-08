@@ -4,7 +4,7 @@ import { contactData } from '../data';
 // import motion
 import { motion } from 'framer-motion';
 // import variants
-import { fade } from '../variants';
+import { fadeIn } from '../variants';
 
 const Contact = () => {
   // destructure contact data
@@ -15,7 +15,7 @@ const Contact = () => {
         <div className='flex flex-col xl:flex-row gap-y-16'>
           {/* text */}
           <motion.div
-            variants={fade('right')}
+            variants={fadeIn('right')}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.4 }}
@@ -71,7 +71,7 @@ const Contact = () => {
           </motion.div>
           {/* form */}
           <motion.div
-            variants={fade('left')}
+            variants={fadeIn('left')}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.4 }}

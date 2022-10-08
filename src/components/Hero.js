@@ -4,7 +4,7 @@ import { heroData } from '../data';
 // import motion
 import { motion } from 'framer-motion';
 // import variants
-import { fade } from '../variants';
+import { fadeIn } from '../variants';
 
 const container = {
   hidden: {},
@@ -29,17 +29,17 @@ const Hero = () => {
       >
         {/* text & btn */}
         <div className='text-white text-center lg:text-left lg:max-w-[640px]'>
-          <motion.h1 variants={fade('down')} className='h1'>
+          <motion.h1 variants={fadeIn('down')} className='h1'>
             {title}
           </motion.h1>
           <motion.p
-            variants={fade('down')}
+            variants={fadeIn('down')}
             className='mb-8 lg:mb-16 max-w-lg leading-relaxed'
           >
             {subtitle}
           </motion.p>
           {/* btn */}
-          <motion.div variants={fade('down')}>
+          <motion.div variants={fadeIn('down')}>
             <button className='btn btn-sm lg:btn-lg btn-outline mx-auto lg:mx-0'>
               {btnText}
               <div className='text-xl'>{btnIcon}</div>

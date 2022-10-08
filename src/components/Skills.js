@@ -8,7 +8,7 @@ import 'react-circular-progressbar/dist/styles.css';
 // import motion
 import { motion } from 'framer-motion';
 // import variants
-import { fade } from '../variants';
+import { fadeIn } from '../variants';
 
 const Skills = () => {
   const { ref, inView } = useInView({
@@ -59,7 +59,7 @@ const Skills = () => {
 
   return (
     <motion.section
-      variants={fade('up')}
+      variants={fadeIn('up')}
       initial='hidden'
       whileInView={'show'}
       viewport={{ once: false, amount: 0.1 }}
