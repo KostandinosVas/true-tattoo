@@ -1,6 +1,20 @@
 import React from 'react';
 // import footer data
 import { footerData } from '../data';
+// import motion
+import { motion } from 'framer-motion';
+// import variants
+import { fadeIn } from '../variants';
+
+const staggerContainer = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.3,
+      delayChildren: 0.2,
+    },
+  },
+};
 
 const Footer = () => {
   // destructure footer data
@@ -9,9 +23,18 @@ const Footer = () => {
     <footer className='bg-dark section'>
       <div className='container mx-auto'>
         {/* grid */}
-        <div className='flex flex-col lg:flex-row lg:justify-between text-white gap-x-5 gap-y-14'>
+        <motion.div
+          variants={staggerContainer}
+          initial={'hidden'}
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.1 }}
+          className='flex flex-col lg:flex-row lg:justify-between text-white gap-x-5 gap-y-14'
+        >
           {/* about */}
-          <div className='flex-1 flex flex-col gap-y-6'>
+          <motion.div
+            variants={fadeIn('up')}
+            className='flex-1 flex flex-col gap-y-6'
+          >
             {/* title */}
             <div className='font-primary text-xl uppercase tracking-[0.08em]'>
               {about.title}
@@ -38,9 +61,12 @@ const Footer = () => {
                 <div>{about.email.address}</div>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* links */}
-          <div className='flex-1 flex flex-col xl:items-center'>
+          <motion.div
+            variants={fadeIn('up')}
+            className='flex-1 flex flex-col xl:items-center'
+          >
             <div>
               <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>
                 {links.title}
@@ -59,9 +85,9 @@ const Footer = () => {
                 })}
               </ul>
             </div>
-          </div>
+          </motion.div>
           {/* program */}
-          <div className='flex-1'>
+          <motion.div variants={fadeIn('up')} className='flex-1'>
             <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>
               {program.title}
             </div>
@@ -70,9 +96,9 @@ const Footer = () => {
                 return <li key={index}>{item.name}</li>;
               })}
             </ul>
-          </div>
+          </motion.div>
           {/* newsletter */}
-          <div className='flex-1'>
+          <motion.div variants={fadeIn('up')} className='flex-1'>
             <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>
               {newsletter.title}
             </div>
@@ -89,8 +115,8 @@ const Footer = () => {
                 {newsletter.form.icon}
               </button>
             </form>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </footer>
   );
