@@ -1,6 +1,11 @@
 import React from 'react';
 // import contact data
 import { contactData } from '../data';
+// import motion
+import { motion } from 'framer-motion';
+// import variants
+import { fade } from '../variants';
+
 const Contact = () => {
   // destructure contact data
   const { title, info, form } = contactData;
@@ -9,7 +14,13 @@ const Contact = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-y-16'>
           {/* text */}
-          <div className='flex-1'>
+          <motion.div
+            variants={fade('right')}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.4 }}
+            className='flex-1'
+          >
             {/* title */}
             <h2 className='h2 max-w-[490px]'>{title}</h2>
             {/* info items */}
@@ -57,9 +68,15 @@ const Contact = () => {
                 );
               })}
             </div>
-          </div>
+          </motion.div>
           {/* form */}
-          <div className='flex-1 xl:pl-[40px] flex justify-center items-center '>
+          <motion.div
+            variants={fade('left')}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.4 }}
+            className='flex-1 xl:pl-[40px] flex justify-center items-center '
+          >
             <form className='flex flex-col gap-y-10 w-full'>
               <input
                 className='border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4'
@@ -80,7 +97,7 @@ const Contact = () => {
                 {form.btnText}
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
