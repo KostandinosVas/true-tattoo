@@ -42,7 +42,7 @@ const Skills = () => {
       setFullColor(0);
       setTemporary(0);
     }
-  }, [inView, fullBody, piercing, fullBody, temporary]);
+  }, [inView, fullBody, piercing, fullColor, temporary]);
 
   const styles = {
     path: {
@@ -66,7 +66,7 @@ const Skills = () => {
       ref={ref}
       className='section font-primary'
     >
-      <div className='container mx-auto'>
+      <div  className='container mx-auto '>
         <div className='flex flex-col xl:flex-row justify-between items-center gap-y-12'>
           <div className='w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6'>
             <CircularProgressbar
@@ -75,7 +75,7 @@ const Skills = () => {
               value={fullBody}
               text={`${fullBody}%`}
             />
-            <div className='uppercase font-light tracking-[1.2px] text-center'>
+            <div  className='uppercase font-light tracking-[1.2px] text-center'>
               Full Body Tatoo
             </div>
           </div>
@@ -109,7 +109,7 @@ const Skills = () => {
               text={`${temporary}%`}
             />
             <div className='uppercase font-light tracking-[1.2px] text-center'>
-              Temporary Tatoo
+              Happy Customers
             </div>
           </div>
         </div>

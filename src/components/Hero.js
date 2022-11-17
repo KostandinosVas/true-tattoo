@@ -20,7 +20,7 @@ const Hero = () => {
   // destructure hero data
   const { title, subtitle, btnText, btnIcon } = heroData;
   return (
-    <section className='bg-hero bg-cover bg-center min-h-[40vh] lg:h-[948px] bg-no-repeat relative mt-[120px] lg:mt-[150px]'>
+    <section name="home" className=' border-b-2 bg-hero shadow-lg bg-cover bg-center min-h-[40vh] lg:h-[948px] bg-no-repeat relative mt-[120px] lg:mt-[150px]'>
       <motion.div
         variants={container}
         initial='hidden'
@@ -28,9 +28,10 @@ const Hero = () => {
         className='container mx-auto min-h-[40vh] lg:h-full flex items-center justify-center xl:justify-end'
       >
         {/* text & btn */}
-        <div className='text-white text-center lg:text-left lg:max-w-[640px]'>
+        <div  className='text-white text-center lg:text-left lg:max-w-[640px]'>
           <motion.h1 variants={fadeIn('down')} className='h1'>
             {title}
+           
           </motion.h1>
           <motion.p
             variants={fadeIn('down')}
@@ -38,16 +39,25 @@ const Hero = () => {
           >
             {subtitle}
           </motion.p>
+
           {/* btn */}
           <motion.div variants={fadeIn('down')}>
-            <button className='btn btn-sm lg:btn-lg btn-outline mx-auto lg:mx-0'>
+         
+          <button className=' btn btn-sm lg:btn-lg btn-outline  bg-gradient-to-r from-red-600  to-red-400 rounded mx-auto lg:mx-0'>
+          <a href="tel:+302831506495" className='flex flex-row gap-3 items-center'>
+             <div className='text-xl'>
+                {btnIcon}
+                </div>
+                
               {btnText}
-              <div className='text-xl'>{btnIcon}</div>
+              </a>
             </button>
+            
+            
           </motion.div>
         </div>
         {/* outline text */}
-        <div className='hidden xl:flex absolute -bottom-2 right-0 left-0 before:content-outlineText'></div>
+        <div className='hidden xl:flex absolute -bottom-2  right-0 left-0 before:content-outlineText'></div>
       </motion.div>
     </section>
   );

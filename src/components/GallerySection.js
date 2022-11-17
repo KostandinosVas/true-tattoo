@@ -21,7 +21,7 @@ const GallerySection = () => {
   // destructure gallery data
   const { title, btnText, btnIcon, images } = galleryData;
   return (
-    <section className='bg-[#F9F9F9] section relative mt-[40px] lg:mt-0'>
+    <section name="gallery" className='bg-[#F9F9F9] section relative mt-[40px] lg:mt-0'>
       <div className='container mx-auto'>
         <motion.h2
           variants={fadeIn('up')}
@@ -62,7 +62,7 @@ const GallerySection = () => {
         viewport={{ once: false, amount: 0.2 }}
         className='flex justify-center'
       >
-        <button className='btn btn-lg btn-dark'>
+        <button name="skills" className='btn btn-lg btn-dark'>
           {btnText}
           <div className='text-xl'>{btnIcon}</div>
         </button>

@@ -1,22 +1,34 @@
 import React from 'react';
-// import nav data
-import { navData } from '../data';
+
+// import navigation data
+import { navigation } from '../data';
+
+// import Link
+import { Link } from 'react-scroll';
 
 const Nav = () => {
-  // destructure nav data
-  const { items } = navData;
+  const {items} = navigation
   return (
     <nav>
-      <ul className='flex gap-x-[58px]'>
-        {items.map((item, index) => {
+      <ul className='flex space-x-8 capitalize text-[15px] '>
+        {items.map((item, idx) => {
+          
           return (
-            <li key={index}>
-              <a
-                className='link hover:border-b-2 hover:border-dark transition duration-300'
-                href={item.href}
+            <li
+              className='text-gray-700 hover:scale-105  cursor-pointer text-lg '
+              key={idx}
+            >
+              <Link
+                to={item.href}
+                activeClass='active'
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className='transition-all duration-300 hover:text-red-500'
               >
                 {item.name}
-              </a>
+              </Link>
             </li>
           );
         })}

@@ -1,5 +1,5 @@
 // import images
-import Logo from '../src/img/header/logo.svg';
+import Logo from '../src/img/header/logo.png';
 import GalleryImg1 from '../src/img/gallery/1.png';
 import GalleryImg2 from '../src/img/gallery/2.png';
 import GalleryImg3 from '../src/img/gallery/3.png';
@@ -16,48 +16,43 @@ import { FiSend } from 'react-icons/fi';
 import { FaPlay, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import {
   IoLogoInstagram,
-  IoLogoPinterest,
-  IoLogoTwitter,
-  IoLogoYoutube,
+ 
 } from 'react-icons/io';
 
 export const headerData = {
   logo: Logo,
 };
 
-export const navData = {
+export const navigation = {
   items: [
-    { href: '/', name: 'Home' },
-    { href: '/', name: 'About' },
-    { href: '/', name: 'Gallery' },
-    { href: '/', name: 'Interview' },
-    { href: '/', name: 'Articles' },
-    { href: '/', name: 'Contact' },
+    { href: 'home', name: 'Home' },
+    { href: 'about', name: 'About' },
+    { href: 'gallery', name: 'Gallery' },
+    { href: 'interview', name: 'Interview' },
+    { href: 'skills', name: 'Skills' },
+    { href: 'contact', name: 'Contact' },
   ],
 };
 
 export const socialData = [
-  { href: '/', icon: <GrFacebookOption /> },
-  { href: '/', icon: <IoLogoInstagram /> },
-  { href: '/', icon: <IoLogoPinterest /> },
-  { href: '/', icon: <IoLogoTwitter /> },
-  { href: '/', icon: <IoLogoYoutube /> },
+  { href: 'https://m.facebook.com/people/Truetattoorethimno/100063557830164/', icon: <GrFacebookOption /> },
+  { href: 'https://www.instagram.com/truetattoo_rethimno/?hl=en', icon: <IoLogoInstagram /> },
 ];
 
 export const heroData = {
-  title: 'I’m Void Sir.',
+  title: 'True Tattoo & Piercing',
   subtitle:
     'Tattoos have their own unique power and magic. They not only beautify the body but also the psyche.',
-  btnText: 'read more',
-  btnIcon: <IoMdArrowForward />,
+  btnText: 'Call us',
+  btnIcon: <FaPhoneAlt />,
 };
 
 export const aboutData = {
-  title: 'My Story:',
+  title: 'Our Story:',
   subtitle1:
-    'In velit arcu posuere integer. Dolor sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus hac vel ante sit sed scelerisque praesent duis volutpat laoreet.',
+    'We are proudly owned and operated in Retimno, Crete. Our doors have been open to the public since 2018 for walk-ins and appointments for larger custom work. Feel free to look through our artist work to find the right fit for you. Whenever you are in the area, stop in so we can talk about your next tattoo!',
   subtitle2:
-    'Nisl, sit molestie commodo congue. Etiam lectus risus in amet. Commodo molestie fames etiam aenean sed. Pellentesque et venenatis amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra faucibus tincidunt habitasse amet. Nunc, velit nunc, scelerisque imperdiet nunc.',
+    '',
   btnText: 'Know more',
   btnIcon: <IoMdArrowForward />,
 };
@@ -83,7 +78,7 @@ export const galleryData = {
       src: GalleryImg3,
       original: GalleryImg3,
       width: 465,
-      height: 412,
+      height: 540,
     },
     {
       src: GalleryImg4,
@@ -129,10 +124,11 @@ export const testimonialData = [
   {
     quoteImg: QuoteImg,
     message:
-      "The entire team is extremely kind and friendly. They're fantastic. They're great at what they do! And it's unique.They will properly consult with you.",
-    name: 'Jack Geoffrey',
-    occupation: 'Tattoo Artist',
+      "Great little Tattoo-Shop...nice staff, very friendly. And of course great tattoos they make. Will come back for sure, next time visiting Crete 👍😊👍",
+    name: 'Michael Grigoleit',
+    occupation: '',
   },
+ 
   {
     quoteImg: QuoteImg,
     message:
@@ -146,41 +142,24 @@ export const contactData = {
   title: 'Get in touch with me:',
   info: [
     {
-      title: 'LA office',
+      title: 'Rethymno office',
       subtitle:
-        'In velit arcu posuere integer sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus',
+        'At the heart of rethymno city ',
       address: {
         icon: <FaMapMarkerAlt />,
-        name: '784 Norman Street, Los Angeles',
+        name: 'Arkadiou 105-Chereti 3',
       },
       phone: {
         icon: <FaPhoneAlt />,
-        number: '+49 93 30493943',
+        number: '+302831506495',
       },
       email: {
         icon: <FaEnvelope />,
-        address: 'contact@yourcompany.com',
+        address: 'truetattoorethimno@yahoo.com',
       },
       link: 'Get location',
     },
-    {
-      title: 'NYC office',
-      subtitle:
-        'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
-      address: {
-        icon: <FaMapMarkerAlt />,
-        name: '1630 Elm Drive, New York City',
-      },
-      phone: {
-        icon: <FaPhoneAlt />,
-        number: '+49 34 36573355',
-      },
-      email: {
-        icon: <FaEnvelope />,
-        address: 'contact@yourcompany.com',
-      },
-      link: 'Get location',
-    },
+    
   ],
   form: {
     name: 'Write your name here',
@@ -192,20 +171,20 @@ export const contactData = {
 
 export const footerData = {
   about: {
-    title: 'About void tattoo',
+    title: 'About True tattoo',
     subtitle:
-      'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
+      '',
     address: {
       icon: <FaMapMarkerAlt />,
-      name: '1630 Elm Drive, New York City',
+      name: 'Arkadiou 105-Chereti 3 rethimno.74100',
     },
     phone: {
       icon: <FaPhoneAlt />,
-      number: '+49 34 36573355',
+      number: '+302831506495',
     },
     email: {
       icon: <FaEnvelope />,
-      address: 'contact@yourcompany.com',
+      address: 'truetattoorethimno@yahoo.com',
     },
   },
   links: {
@@ -220,16 +199,14 @@ export const footerData = {
   program: {
     title: 'Working Time',
     items: [
-      { name: 'Mon - Tue / Appointment' },
-      { name: 'Wed - Fri / 10:00 - 9:00pm' },
-      { name: 'Sat / 10:00 - 6:00pm' },
-      { name: 'Sun / no work on this day' },
+      { name: 'Mon - Sat / 11:00 am - 9:00 pm' },
+      { name: 'Sun / Closed' },
     ],
   },
   newsletter: {
     title: 'Newsletter',
     subtitle:
-      'Elit duis porttitor massa tellus nun in velit arcu posuere integer.',
+      'Get our latest news',
     form: {
       placeholder: 'Your email address',
       icon: <FiSend />,

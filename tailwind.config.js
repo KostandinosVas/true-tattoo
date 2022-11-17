@@ -27,9 +27,11 @@ module.exports = {
         },
       },
       backgroundImage: {
-        hero: "url('/src/img/hero/bg.jpg')",
+        hero: "url('/src/img/hero/true-min.jpg')",
         about: "url('/src/img/about/image.png')",
-        interview: "url('/src/img/interview/bg.png')",
+        interview: "url('/src/img/about/mits.jpg')",
+      
+        
       },
       content: {
         outlineText: 'url("/src/img/hero/outline-text.svg")',

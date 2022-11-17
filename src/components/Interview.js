@@ -19,14 +19,14 @@ const Interview = () => {
       initial='hidden'
       whileInView={'show'}
       viewport={{ once: false, amount: 0.1 }}
-      className='section bg-dark bg-interview bg-no-repeat bg-cover bg-center lg:h-[812px]'
+      className='section bg-dark bg-interview bg-no-repeat bg-cover bg-center lg:h-[812px] shadow-lg'
     >
-      <div className='container mx-auto h-full'>
+      <div name="interview" className='container mx-auto h-full'>
         <div className='flex flex-col justify-center h-full'>
           <div className='flex flex-col items-start max-w-[880px]'>
             <motion.h3
               variants={fadeIn('down')}
-              className='text-white text-[40px] lg:text-[60px] leading-[1.1] font-tertiary -tracking-[1.5px] capitalize  mb-8'
+              className='text-white drop-shadow-lg text-[40px] lg:text-[60px] leading-[1.1] font-tertiary -tracking-[1.5px] capitalize  mb-8'
             >
               {title}
             </motion.h3>

@@ -47,7 +47,7 @@ const Footer = () => {
             <div className='flex flex-col gap-y-4 font-semibold text-[#DBDBDB]'>
               {/* address */}
               <div className='flex items-center gap-x-[10px]'>
-                <div>{about.address.icon}</div>
+               <a href="https://goo.gl/maps/KuvQKbopshMmBy9YA" target="_blank" rel="noreferrer"> <div>{about.address.icon} </div></a>
                 <div>{about.address.name}</div>
               </div>
               {/* phone */}
