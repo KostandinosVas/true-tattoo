@@ -26,13 +26,13 @@ const Skills = () => {
         if (fullBody < 90) {
           setFullBody(fullBody + 1);
         }
-        if (piercing < 80) {
+        if (piercing < 100) {
           setPiercing(piercing + 1);
         }
-        if (fullColor < 75) {
+        if (fullColor < 90) {
           setFullColor(fullColor + 1);
         }
-        if (temporary < 95) {
+        if (temporary < 100) {
           setTemporary(temporary + 1);
         }
       }, 50);
