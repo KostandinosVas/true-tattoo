@@ -19,7 +19,7 @@ const slides = galleryData.images.map(({ original, width, height }) => ({
 const GallerySection = () => {
   const [index, setIndex] = useState(-1);
   // destructure gallery data
-  const { title, btnText, btnIcon, images } = galleryData;
+  const { title, images } = galleryData;
   return (
     <section name="gallery" className='bg-[#F9F9F9] section relative mt-[40px] lg:mt-0'>
       <div className='container mx-auto'>
@@ -28,7 +28,7 @@ const GallerySection = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6 }}
-          className='h2 max-w-[370px] lg:mb-20'
+          className='h2 max-w-[370px] lg:mb-20 '
         >
           {title}
         </motion.h2>
@@ -55,18 +55,19 @@ const GallerySection = () => {
         />
       </motion.div>
       {/* btn */}
-      <motion.div
+      {/* <motion.div
         variants={fadeIn('up')}
         initial='hidden'
         whileInView={'show'}
         viewport={{ once: false, amount: 0.2 }}
         className='flex justify-center'
       >
-        <button name="skills" className='btn btn-lg btn-dark'>
+        <button 
+        name="skills" className='btn btn-lg btn-dark'>
           {btnText}
           <div className='text-xl'>{btnIcon}</div>
         </button>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };

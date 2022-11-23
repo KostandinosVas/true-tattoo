@@ -51,10 +51,10 @@ const Interview = () => {
             </motion.div>
             {/* modal video */}
             <ModalVideo
-              channel='youtube'
+              channel='custom'
               autoplay
               isOpen={isOpen}
-              videoId='_l1mqYQuNf8'
+              url='https://www.instagram.com/tv/CYcSWDiAR9N/?utm_source=ig_web_copy_link'
               onClose={() => setOpen(false)}
             />
           </div>

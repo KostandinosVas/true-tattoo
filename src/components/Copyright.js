@@ -17,11 +17,12 @@ const Copyright = () => {
           viewport={{ once: false, amount: 0 }}
           className='tracking-[0.02em] text-base'
         >
-          &copy; 2022 
+          &copy; 2022
+          <br />
           <span className='font-semibold text-white'>True Tattoo.</span>
-         <br></br> All rights reserved.
+         <br></br> <small>All rights reserved.</small> 
         </motion.div>
-        <p className='text-bold text-white p-5'><small className='text-gray-400'>Made by</small>  Kostandinos Vasili</p>
+        <p className='text-bold text-white p-5'><small className='text-gray-400'>Made by</small><br></br>  Kostandinos Vasili</p>
       </div>
       
     </div>

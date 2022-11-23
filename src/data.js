@@ -53,13 +53,13 @@ export const aboutData = {
     'We are proudly owned and operated in Retimno, Crete. Our doors have been open to the public since 2018 for walk-ins and appointments for larger custom work. Feel free to look through our artist work to find the right fit for you. Whenever you are in the area, stop in so we can talk about your next tattoo!',
   subtitle2:
     '',
-  btnText: 'Know more',
+
   btnIcon: <IoMdArrowForward />,
 };
 
 export const galleryData = {
-  title: 'Check my gallery:',
-  btnText: 'View all',
+  title: 'Check Our Gallery:',
+ 
   btnIcon: <IoMdArrowForward />,
   images: [
     {
@@ -110,6 +110,7 @@ export const galleryData = {
       width: 465,
       height: 412,
     },
+    
   ],
 };
 
@@ -132,14 +133,28 @@ export const testimonialData = [
   {
     quoteImg: QuoteImg,
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam culpa asperiores officia natus dignissimos autem possimus molestias aperiam?',
-    name: 'Douglas Hane',
-    occupation: 'Tattoo Artist',
+      'My partner and I got our matching tattoos here and had a great experience. Our tattooist was funny and cracked many jokes to help us relax. ',
+    name: 'Grace Smith',
+    occupation: '',
+  },
+  {
+    quoteImg: QuoteImg,
+    message:
+      'Shortly decided, appointment and a new tattoo in the blink of an eye. Very good work.',
+    name: 'Larissa Frank',
+    occupation: '',
+  },
+  {
+    quoteImg: QuoteImg,
+    message:
+      ' Super perfect.. highly recommended a master tattoo artist!! Thank you again and again',
+    name: 'Karin Zahnd',
+    occupation: '',
   },
 ];
 
 export const contactData = {
-  title: 'Get in touch with me:',
+  title: 'Get in touch with Us:',
   info: [
     {
       title: 'Rethymno office',

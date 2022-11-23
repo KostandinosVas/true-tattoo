@@ -43,7 +43,7 @@ const Hero = () => {
           {/* btn */}
           <motion.div variants={fadeIn('down')}>
          
-          <button className=' btn btn-sm lg:btn-lg btn-outline  bg-gradient-to-r from-red-600  to-red-400 rounded mx-auto lg:mx-0'>
+          <button className=' btn btn-sm lg:btn-lg btn-outline mb-6 bg-gradient-to-r from-red-600  to-red-400 rounded mx-auto lg:mx-0'>
           <a href="tel:+302831506495" className='flex flex-row gap-3 items-center'>
              <div className='text-xl'>
                 {btnIcon}
