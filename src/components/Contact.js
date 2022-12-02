@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 // import variants
 import { fadeIn } from '../variants';
 // import { FiTarget } from 'react-icons/fi';
+import Socials from './Socials';
 
 const Contact = () => {
   // destructure contact data
@@ -50,6 +51,10 @@ const handleClearForm = () => {
           >
             {/* title */}
             <h2 className='h2 max-w-[490px]'>{title}</h2>
+            <div className=' text-3xl flex justify-start mt-4 mb-3 pr-3 text-red-600'> 
+                         <Socials /> 
+                      </div>
+                     
             {/* info items */}
             <div className='flex flex-col xl:flex-row gap-x-5 gap-y-16 xl:gap-y-0'>
               {info.map((item, index) => {
@@ -84,6 +89,8 @@ const handleClearForm = () => {
                         <div>{email.icon}</div>
                         <div className='font-medium'>{email.address}</div>
                       </div>
+                     
+                    
                     </div>
                     {/* link */}
                     <a

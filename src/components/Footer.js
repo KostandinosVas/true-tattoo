@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 // import variants
 import { fadeIn } from '../variants';
 
+
 const staggerContainer = {
   hidden: {},
   show: {
@@ -18,7 +19,7 @@ const staggerContainer = {
 
 const Footer = () => {
   // destructure footer data
-  const { about, links, program, newsletter } = footerData;
+  const { about, program, newsletter } = footerData;
   return (
     <footer className='bg-dark section'>
       <div className='container mx-auto'>
@@ -62,30 +63,8 @@ const Footer = () => {
               </div>
             </div>
           </motion.div>
-          {/* links */}
-          <motion.div
-            variants={fadeIn('up')}
-            className='flex-1 flex flex-col xl:items-center'
-          >
-            <div>
-              <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>
-                {links.title}
-              </div>
-              <ul className='flex flex-col gap-y-4 text-[#DBDBDB]'>
-                {links.items.map((item, index) => {
-                  // destructure item
-                  const { href, name } = item;
-                  return (
-                    <li key={index}>
-                      <a className='hover:text-white transition' href={href}>
-                        {name}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </motion.div>
+         
+          
           {/* program */}
           <motion.div variants={fadeIn('up')} className='flex-1'>
             <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>

@@ -1,7 +1,7 @@
 import React from 'react';
 // import motion
 import { motion } from 'framer-motion';
-
+import Socials from './Socials';
 const Copyright = () => {
   return (
     <div className='bg-dark py-6 border-t border-[#2B2B2B] text-[#DBDBDB]'>
@@ -22,6 +22,7 @@ const Copyright = () => {
           <span className='font-semibold text-white'>True Tattoo.</span>
          <br></br> <small>All rights reserved.</small> 
         </motion.div>
+          <Socials />
         <p className='text-bold text-white p-5'><small className='text-gray-400'>Made by</small><br></br>  Kostandinos Vasili</p>
       </div>
       

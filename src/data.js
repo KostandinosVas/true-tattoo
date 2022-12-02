@@ -50,7 +50,7 @@ export const heroData = {
 export const aboutData = {
   title: 'Our Story:',
   subtitle1:
-    'We are proudly owned and operated in Retimno, Crete. Our doors have been open to the public since 2018 for walk-ins and appointments for larger custom work. Feel free to look through our artist work to find the right fit for you. Whenever you are in the area, stop in so we can talk about your next tattoo!',
+    'We are proudly owned and operated in Rethymno, Crete. Our doors have been open to the public since 2018 for walk-ins and appointments for larger custom work. Feel free to look through our artist work to find the right fit for you. Whenever you are in the area, stop in so we can talk about your next tattoo!',
   subtitle2:
     '',
 
@@ -202,15 +202,7 @@ export const footerData = {
       address: 'truetattoorethimno@yahoo.com',
     },
   },
-  links: {
-    title: 'Useful links',
-    items: [
-      { href: '/', name: 'About me' },
-      { href: '/', name: 'My gallery' },
-      { href: '/', name: 'My services' },
-      { href: '/', name: 'Contact me' },
-    ],
-  },
+  
   program: {
     title: 'Working Time',
     items: [

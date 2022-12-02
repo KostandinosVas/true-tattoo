@@ -76,7 +76,7 @@ const Skills = () => {
               text={`${fullBody}%`}
             />
             <div  className='uppercase font-light tracking-[1.2px] text-center'>
-              Full Body Tatoo
+              Full Body Tattoo
             </div>
           </div>
           <div className='w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6'>
@@ -98,7 +98,7 @@ const Skills = () => {
               text={`${fullColor}%`}
             />
             <div className='uppercase font-light tracking-[1.2px] text-center'>
-              Full Colour Tatoo
+              Full Colour Tattoo
             </div>
           </div>
           <div className='w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6'>
